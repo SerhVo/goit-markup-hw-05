@@ -689,7 +689,7 @@ address > ul > li:not(:last-child) {
 }
 
 .backdrop.is-hidden .modal {
- transform:  translate(-50%, -50%) scale(1.5) rotate(180deg);
+ transform:  translate(-50%, -50%) scale(0) rotate(180deg);
  border-radius: 10%;
 }
 
