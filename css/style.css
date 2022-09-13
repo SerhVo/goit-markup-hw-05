@@ -84,12 +84,12 @@ img {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-link:hover,
 .nav-link:focus {
   color: var(--main-btn-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .current::after {
@@ -110,6 +110,7 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--two-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-links .item:not(:last-child),
@@ -120,7 +121,6 @@ img {
 .contact-link:hover,
 .contact-link:focus {
   color: var(--main-btn-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-icon-mail {
@@ -197,6 +197,7 @@ img {
   background-color: var(--main-btn-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button:hover,
@@ -204,7 +205,6 @@ img {
   color: var(--main-btn-color);
   background-color: var(--second-color);
   border-color: var(--main-btn-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button:active {
@@ -378,18 +378,18 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-cover:hover,
 .icon-cover:focus {
   background-color: var(--main-btn-color);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-cover:hover .icon-social,
 .icon-cover:focus .icon-social {
   fill: var(--second-color);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .cliens {
@@ -412,6 +412,7 @@ img {
   width: 170px;
   height: 92px;
   cursor: pointer;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-client {
@@ -419,18 +420,17 @@ img {
   height: 60px;
   width: 106px;
   fill: var(--icon-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-client-bg:hover,
 .icon-client-bg:focus {
   border: 1px solid var(--main-btn-color);
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-client-bg:hover .icon-client,
 .icon-client-bg:focus .icon-client {
   fill: var(--main-btn-color);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-cliens > li:not(:last-child) {
@@ -495,6 +495,7 @@ address > ul > li:not(:last-child) {
   background-color: rgba(255, 255, 255, 0.1);
   align-items: center;
   justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social-icons > li {
@@ -517,18 +518,17 @@ address > ul > li:not(:last-child) {
   height: 20px;
   width: 20px;
   fill: var(--icon-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-icon-cover:hover,
 .footer-icon-cover:focus {
   background-color: var(--main-btn-color);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-icon-cover:hover .footer-icon-social,
 .footer-icon-cover:focus .footer-icon-social {
   fill: var(--second-color);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*                            portfolio                                - main */
@@ -556,6 +556,9 @@ address > ul > li:not(:last-child) {
   background-color: var(--three-color);
   border-color: transparent;
   border-radius: 4px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .current-btn {
@@ -574,7 +577,6 @@ address > ul > li:not(:last-child) {
   border-color: var(--main-btn-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .project-cards {
@@ -588,20 +590,19 @@ address > ul > li:not(:last-child) {
   display: block;
   flex-basis: calc((100% - 60px) / 3);
   background-color: var(--second-color);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .project-card:hover,
 .project-card:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .project-card:hover .prject-card-hov,
 .project-card:focus .prject-card-hov {
   bottom: 0;
   opacity: 1;
-  transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .project-card-img {
@@ -627,6 +628,7 @@ address > ul > li:not(:last-child) {
   line-height: 1.56;
   color: var(--second-color);
   opacity: 0;
+  transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .project-title {
